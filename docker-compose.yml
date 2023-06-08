@@ -6,7 +6,7 @@ services:
     container_name: redis
     volumes:
       - ./redis/data:/data
-    restart: on-failure
+    restart: always
     networks:
       - mysql-network
 
